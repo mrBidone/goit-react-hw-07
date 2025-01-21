@@ -3,10 +3,10 @@ import axios from "axios";
 
 export const fetchContacts = createAsyncThunk(
   "contacts/fetchAll",
-  async (thunkApi) => {
+  async (_, thunkApi) => {
     try {
       const { data } = await axios.get(
-        "https://678aa23cdd587da7ac2aeb83.mockapi.io/api/v1/contacts"
+        "https://678aa23cdd587da7ac2aeb83.moc22kapi.io/api/v1/contacts"
       );
       return data;
     } catch (error) {
